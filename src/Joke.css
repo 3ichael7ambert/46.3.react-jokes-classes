@@ -1,0 +1,40 @@
+.Joke {
+  margin-bottom: 0.75em;
+  padding: 0.2em;
+  background-color: #ecf0f1;
+  border-radius: 0.5em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.Joke:hover {
+  background-color: #d4e6f1;
+}
+
+.Joke-locked {
+  background-color: #ccc;
+}
+
+.Joke-votearea {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Joke-votearea > * {
+  margin-right: 1em;
+  font-size: 1.2em;
+  color: #3498db;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.Joke-votearea > *:hover {
+  color: #2c3e50;
+}
+
+.Joke-text {
+  margin-left: 1em;
+  display: inline-block;
+  width: 500px;
+  font-size: 1.2em;
+  color: #34495e;
+}

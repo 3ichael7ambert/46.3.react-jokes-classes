@@ -1,0 +1,50 @@
+.App {
+    text-align: center;
+  }
+  
+  body {
+    background: linear-gradient(45deg, #3498db, #e74c3c, #1abc9c, #f39c12);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .App:hover .interactive-element {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --accent-color: #1abc9c;
+    --highlight-color: #f39c12;
+  }
+  
+  .interactive-element {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .interactive-element:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .joke-text {
+    color: var(--highlight-color);
+  }
